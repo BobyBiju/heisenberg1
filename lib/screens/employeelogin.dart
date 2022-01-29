@@ -48,6 +48,7 @@ class _EmployeeLoginScreenState extends State<EmployeeLoginScreen> {
                 height: 10.0,
               ),
               TextField(
+                cursorColor: Colors.black45,
                 keyboardType: TextInputType.emailAddress,
                 textAlign: TextAlign.center,
                 style: TextStyle(
@@ -66,6 +67,7 @@ class _EmployeeLoginScreenState extends State<EmployeeLoginScreen> {
                 height: 8.0,
               ),
               TextField(
+                cursorColor: Colors.black45,
                 keyboardType: TextInputType.emailAddress,
                 textAlign: TextAlign.center,
                 style: TextStyle(
@@ -83,6 +85,7 @@ class _EmployeeLoginScreenState extends State<EmployeeLoginScreen> {
                 height: 8.0,
               ),
               TextField(
+                cursorColor: Colors.black45,
                 textAlign: TextAlign.center,
                 obscureText: true,
                 style: TextStyle(
