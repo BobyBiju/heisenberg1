@@ -25,7 +25,7 @@ class _EmployerRegistrationScreenState
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Color(0xFFF0F1F3),
       body: ModalProgressHUD(
         inAsyncCall: showSpinner,
         child: Padding(
@@ -38,8 +38,8 @@ class _EmployerRegistrationScreenState
                 child: Hero(
                   tag: 'logo',
                   child: Container(
-                    height: 150.0,
-                    child: Image.asset('images/employer.png'),
+                    height: 350.0,
+                    child: Image.asset('images/employerr.png'),
                   ),
                 ),
               ),
@@ -50,7 +50,7 @@ class _EmployerRegistrationScreenState
                 textAlign: TextAlign.center,
                 keyboardType: TextInputType.emailAddress,
                 style: TextStyle(
-                  color: Colors.white,
+                  color: Colors.black,
                 ),
                 onChanged: (value) {
                   email = value;
@@ -65,7 +65,7 @@ class _EmployerRegistrationScreenState
                   textAlign: TextAlign.center,
                   obscureText: true,
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.black,
                   ),
                   onChanged: (value) {
                     password = value;
@@ -78,7 +78,7 @@ class _EmployerRegistrationScreenState
               Padding(
                 padding: EdgeInsets.symmetric(vertical: 16.0),
                 child: Material(
-                  color: Colors.blueAccent,
+                  color: Color(0xFF172e4a) ,
                   borderRadius: BorderRadius.all(Radius.circular(30.0)),
                   elevation: 5.0,
                   child: MaterialButton(
@@ -105,7 +105,9 @@ class _EmployerRegistrationScreenState
                     height: 42.0,
                     child: Text(
                       'Register',
-                      style: TextStyle(color: Colors.white),
+                      style: TextStyle(color: Color(0xFFF0F1F3),
+                      fontWeight: FontWeight.w700,
+                      fontSize: 19),
                     ),
                   ),
                 ),

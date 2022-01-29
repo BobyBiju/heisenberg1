@@ -29,12 +29,12 @@ class _EmployerDashboardState extends State<EmployerDashboard> {
     return SafeArea(
 
       child: Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: Color(0xFFF0F1F3),
         body: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(15.0),
           child: Column(
               children: [
-                const SizedBox(height: 10.0),
+                const SizedBox(height: 20.0),
                 Container(
                   child: Padding(
                     padding: const EdgeInsets.all(20.0),
@@ -42,21 +42,23 @@ class _EmployerDashboardState extends State<EmployerDashboard> {
                       textAlign: TextAlign.left,
                       style: TextStyle(
                         fontSize: 30,
-                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        letterSpacing: 0.5,
+                        color: Color(0xFFF0F1F3),
                       ),
                     ),
                   ),
                   height: 100,
-                  width: 500,
-                  padding: EdgeInsets.symmetric(horizontal: 12,vertical: 4),
+                  width: 400,
+                  padding: EdgeInsets.symmetric(horizontal: 12,vertical: 6),
                   decoration: BoxDecoration(
-                    color: Colors.blue,
+                    color: Color(0xFF172e4a),
                     borderRadius: BorderRadius.circular(12),
-                    border: Border.all(color: Colors.grey,width: 2),
+                    border: Border.all(color: Color(0xFF172e4a),width: 2),
                   ),
 
                 ),
-                const SizedBox(height: 10.0),
+                const SizedBox(height: 15.0),
 
 
                 StreamBuilder(
@@ -76,7 +78,7 @@ class _EmployerDashboardState extends State<EmployerDashboard> {
                                 const SizedBox(height: 10.0,),
                                 RaisedButton(
 
-                                  color: Colors.white38,
+                                  color: Color(0xFF172e4a),
                                   shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(16)),
                                   child: Row(
