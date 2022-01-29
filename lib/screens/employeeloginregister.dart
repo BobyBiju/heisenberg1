@@ -1,21 +1,18 @@
-
 import 'package:flutter/material.dart';
 import 'package:joli/screens/employeelogin.dart';
 import 'package:joli/screens/employeeregistration.dart';
 import 'package:joli/screens/employerregistration.dart';
 
-
-
-
 class EmployeeLoginRegisterScreen extends StatefulWidget {
+  static String id = 'employee_login_register_screen';
 
-  static String id='employee_login_register_screen';
   @override
-  _EmployeeLoginRegisterScreenState createState() => _EmployeeLoginRegisterScreenState();
+  _EmployeeLoginRegisterScreenState createState() =>
+      _EmployeeLoginRegisterScreenState();
 }
 
-class _EmployeeLoginRegisterScreenState extends State<EmployeeLoginRegisterScreen> {
-
+class _EmployeeLoginRegisterScreenState
+    extends State<EmployeeLoginRegisterScreen> {
   // final _auth=FirebaseAuth.instance;
 
   // bool showSpinner=false;
@@ -24,7 +21,7 @@ class _EmployeeLoginRegisterScreenState extends State<EmployeeLoginRegisterScree
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Color(0xFFF0F1F3),
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 24.0),
         child: Column(
@@ -32,15 +29,16 @@ class _EmployeeLoginRegisterScreenState extends State<EmployeeLoginRegisterScree
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             Flexible(
-              child: Hero(tag: 'logo',
+              child: Hero(
+                tag: 'logo',
                 child: Container(
-                  height: 200.0,
-                  child: Image.asset('images/laborer.png'),
+                  height: 350.0,
+                  child: Image.asset('images/Employeee.png'),
                 ),
               ),
             ),
             SizedBox(
-              height: 48.0,
+              height: 18.0,
             ),
             // TextField(textAlign: TextAlign.center,
             //   style: TextStyle(
@@ -66,15 +64,15 @@ class _EmployeeLoginRegisterScreenState extends State<EmployeeLoginRegisterScree
             //     decoration: kTextfieldDecoration.copyWith(hintText: 'Enter your 6 digit password')
             // ),
             SizedBox(
-              height: 24.0,
+              height: 14.0,
             ),
             Padding(
               padding: EdgeInsets.symmetric(vertical: 16.0),
               child: Material(
-                color: Colors.blueAccent,
+                color: Color(0xFF172e4a),
                 borderRadius: BorderRadius.all(Radius.circular(30.0)),
                 elevation: 5.0,
-                child:   MaterialButton(
+                child: MaterialButton(
                   onPressed: () {
                     Navigator.pushNamed(context, EmployeeRegistrationScreen.id);
                     // setState(() {
@@ -98,13 +96,11 @@ class _EmployeeLoginRegisterScreenState extends State<EmployeeLoginRegisterScree
                   height: 42.0,
                   child: Text(
                     'Register',
-                    style: TextStyle(color: Colors.white),
+                    style: TextStyle(color: Color(0xFFF0F1F3),
+                    fontSize: 19,
+                    fontWeight: FontWeight.w700),
                   ),
                 ),
-
-
-
-
               ),
             ),
 
@@ -114,10 +110,10 @@ class _EmployeeLoginRegisterScreenState extends State<EmployeeLoginRegisterScree
             Padding(
               padding: EdgeInsets.symmetric(vertical: 16.0),
               child: Material(
-                color: Colors.blueAccent,
+                color: Color(0xFF172e4a),
                 borderRadius: BorderRadius.all(Radius.circular(30.0)),
                 elevation: 5.0,
-                child:   MaterialButton(
+                child: MaterialButton(
                   onPressed: () {
                     Navigator.pushNamed(context, EmployeeLoginScreen.id);
                     // setState(() {
@@ -141,19 +137,16 @@ class _EmployeeLoginRegisterScreenState extends State<EmployeeLoginRegisterScree
                   height: 42.0,
                   child: Text(
                     'Login',
-                    style: TextStyle(color: Colors.white),
+                    style: TextStyle(color: Color(0xFFF0F1F3),
+                        fontSize: 19,
+                        fontWeight: FontWeight.w700),
                   ),
                 ),
-
-
-
-
               ),
             ),
           ],
         ),
       ),
-
     );
   }
 }

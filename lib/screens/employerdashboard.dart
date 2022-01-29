@@ -78,7 +78,7 @@ class _EmployerDashboardState extends State<EmployerDashboard> {
                                 const SizedBox(height: 10.0,),
                                 RaisedButton(
 
-                                  color: Color(0xFF172e4a),
+                                  color: Colors.white38,
                                   shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(16)),
                                   child: Row(
