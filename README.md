@@ -1,17 +1,7 @@
+# JOLI
 
-# joli
+> As we all know Covid-19 has struck the world deeply. The World Econonmy was the worst hit. Unemploymenet were seen Everywhere. The people who were engaged in Day to Day services like Plumbers, Electricians, Carpenters etc were the worst hit.
 
-A new Flutter project.
+> So what we bring to you is a platform where people can hire such people. We present to you the app *JOLI*, where workers can create thier profile giving info such as :  Name, Phone No, Location where their Services is avaliable.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+> Employers can also create a profile & they would be able to see workers who are available at thier respective locations from where they would be able to hire them.
