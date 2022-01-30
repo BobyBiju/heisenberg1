@@ -140,7 +140,7 @@ class _ContactEmployeeState extends State<ContactEmployee> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => Mapshow()));
+                            builder: (context) => Mapshow(widget.employee['Latitude'],widget.employee['Longitude'])));
                   },
                   child: Text("Map'em",
                     style: TextStyle(color: Colors.white),

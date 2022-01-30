@@ -56,7 +56,12 @@ double latitude,longitude;
       print(e);
     }
   }
-
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    getcurrentlocation();
+  }
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -219,6 +224,7 @@ double latitude,longitude;
     // Navigator.pushNamed(context, EmployeeDashboard.id);
      Navigator.of(context).push(MaterialPageRoute(builder: (context)=>EmployeeDashboard(employeeName),));
   }
+
 
 
 }

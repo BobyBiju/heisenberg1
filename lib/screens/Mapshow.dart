@@ -15,6 +15,10 @@ List<LatLng> polylineCoordinates = [];
 
 class Mapshow extends StatefulWidget {
 
+  final double employeeLat, employeeLong;
+
+  Mapshow(this.employeeLat,this.employeeLong);
+
   @override
   _MapshowState createState() => _MapshowState();
 }
@@ -26,7 +30,7 @@ class _MapshowState extends State<Mapshow> {
       _markers.add(
         Marker(
             markerId: MarkerId('id-1'),
-            position: LatLng(9.1748, 76.5013),
+            position: LatLng(widget.employeeLat, widget.employeeLong),
             infoWindow: InfoWindow(onTap: (){
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) {
