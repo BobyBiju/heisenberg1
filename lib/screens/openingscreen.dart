@@ -138,7 +138,7 @@ class _OpeningScreenState extends State<OpeningScreen> {
                   minWidth: 200.0,
                   height: 42.0,
                   child: Text(
-                    'Empolyee',
+                    'Employee',
                     style: TextStyle(
                       color: Color(0xFFF0F1F3),
                       fontSize: 19.0,

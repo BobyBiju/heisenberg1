@@ -38,7 +38,7 @@ class _EmployerDashboardState extends State<EmployerDashboard> {
                 Container(
                   child: Padding(
                     padding: const EdgeInsets.all(20.0),
-                    child:   Text("Employer DashBoard",
+                    child:   Text("Employer Dashboard",
                       textAlign: TextAlign.left,
                       style: TextStyle(
                         fontSize: 30,
