@@ -51,12 +51,14 @@ class _EmployerRegistrationScreenState
                 keyboardType: TextInputType.emailAddress,
                 style: TextStyle(
                   color: Colors.black,
+                  fontSize: 19,
                 ),
                 onChanged: (value) {
                   email = value;
                 },
-                decoration:
-                    kTextfieldDecoration.copyWith(hintText: 'Enter your email'),
+                decoration: kTextfieldDecoration.copyWith(
+                    hintText: 'Enter your email',
+                    hintStyle: TextStyle(color: Colors.black45)),
               ),
               SizedBox(
                 height: 8.0,
@@ -66,19 +68,21 @@ class _EmployerRegistrationScreenState
                   obscureText: true,
                   style: TextStyle(
                     color: Colors.black,
+                    fontSize: 19
                   ),
                   onChanged: (value) {
                     password = value;
                   },
                   decoration: kTextfieldDecoration.copyWith(
-                      hintText: 'Enter your 6 digit password')),
+                      hintText: 'Enter your 6 digit password',
+                      hintStyle: TextStyle(color: Colors.black45))),
               SizedBox(
                 height: 24.0,
               ),
               Padding(
                 padding: EdgeInsets.symmetric(vertical: 16.0),
                 child: Material(
-                  color: Color(0xFF172e4a) ,
+                  color: Color(0xFF172e4a),
                   borderRadius: BorderRadius.all(Radius.circular(30.0)),
                   elevation: 5.0,
                   child: MaterialButton(
@@ -105,9 +109,10 @@ class _EmployerRegistrationScreenState
                     height: 42.0,
                     child: Text(
                       'Register',
-                      style: TextStyle(color: Color(0xFFF0F1F3),
-                      fontWeight: FontWeight.w700,
-                      fontSize: 19),
+                      style: TextStyle(
+                          color: Color(0xFFF0F1F3),
+                          fontWeight: FontWeight.w700,
+                          fontSize: 19),
                     ),
                   ),
                 ),
